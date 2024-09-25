@@ -26,6 +26,7 @@ class MainActivity : AppCompatActivity() {
                 displayTextView.text = "Please enter your name"
             } else {
                 displayTextView.text = "Hello, $name"
+                //added changessss
             }
         }
 
