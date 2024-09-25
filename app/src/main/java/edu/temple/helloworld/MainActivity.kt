@@ -20,7 +20,11 @@ class MainActivity : AppCompatActivity() {
 
         
         findViewById<Button>(R.id.clickMeButton).setOnClickListener {
-            displayTextView.text = "Hello, ${findViewById<EditText>(R.id.nameEditText).text}"
+            var name = findViewById<EditText>(R.id.nameEditText).text
+            if (name.equals("")){
+                displayTextView.text = "Hello, ${name}"
+            }
+
         }
 
 
